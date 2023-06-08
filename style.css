@@ -143,7 +143,8 @@ input[type="checkbox"] {
 
 .title {
   font-size: 100px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Pacifico', cursive;
+  letter-spacing: 5px;
 }
 
 .paragraph {
@@ -200,6 +201,7 @@ input[type="checkbox"] {
   text-align: center;
   font-size: 70px;
   color: white;
+  font-family: 'Pacifico', cursive;
 }
 
 .card-APIE {
@@ -220,6 +222,7 @@ input[type="checkbox"] {
   width: 100%;
   font-size: 23px;
   color: white;
+  line-height: 1.2;
 }
 
 .img1 {
@@ -319,8 +322,6 @@ textarea {
   padding: 10px;
   resize: none;
 }
-
-
 
 /* SUBMIT BUTTON */
 
@@ -726,29 +727,6 @@ footer {
   }
 } */
 
-/* @media (max-width: 1200px) {
-  .container5{
-    background-color: #fff;
-    width: 60%;
-    display: flex;
-    height: auto;
-    margin: auto;
-  }
-  
-  .informacija{
-    width: 40%;
-  }
-  
-  .paveikslelis{
-    width: 100%;
-  
-  }
-  .paveikslelis img{
-    width: 600px;
-    height: 100%;
-  }
-} */
-
 @media screen and (max-width: 790px) {
   html {
     font-size: 14px;
@@ -758,9 +736,367 @@ footer {
   }
 }
 
+@media (min-width: 769px) and (max-width: 1100px) {
+  .Background {
+    width: 100%;
+  }
+  .navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: black;
+    color: #fff;
+  }
 
+  header {
+    padding-top: 100px;
+    margin-bottom: 150px;
+    height: 100vh;
+  }
+  .img img {
+    width: 100%;
+  }
 
-@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 100px;
+  }
+
+  .container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: auto;
+  }
+
+  .container3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 0 0 0;
+  }
+
+  .text3 {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  .img img {
+    width: 150%;
+  }
+
+  .img1 img {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 50px;
+  }
+
+  .paragraph {
+    margin: auto;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .skyrius {
+    font-size: 50px;
+  }
+
+  #APIE {
+    height: 110vh;
+  }
+
+  .card-APIE {
+    border-radius: 20px;
+    /* background-image: linear-gradient(60deg, #482088be 0%, #000000c4 100%); */
+    background-color: #181818;
+    width: 80%;
+    height: 800px;
+    margin: 0 auto;
+    padding: 5px;
+  }
+
+  .text1 {
+    width: 80%;
+  }
+  .paragraph1 {
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .container5 {
+    display: none;
+  }
+
+  .phone-and-tablet-contact {
+    display: block;
+    width: 100%;
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(assets/img/phone-contact.svg);
+  }
+
+  .phone-and-tablet-contact form {
+    padding-top: 200px;
+  }
+
+  .phone-and-tablet-contact button {
+    margin-top: 20px;
+  }
+
+  .phone-and-tablet-contact input,
+  textarea,
+  label,
+  button {
+    color: white;
+    display: flex;
+    margin: auto;
+    width: 50%;
+  }
+}
+
+.card-APIE .container {
+  width: max-content;
+}
+
+@media (max-width: 500px) {
+  .footer-menu ul {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .Background {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+  .navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: black;
+    color: #fff;
+  }
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: black;
+    right: 0;
+    left: 0;
+    margin: 40px 0;
+    text-align: center;
+    padding: 40px 0;
+  }
+
+  .menu li:hover {
+    display: inline-block;
+    transition: 0.3s ease;
+  }
+
+  .menu li + li {
+    margin-top: 20px;
+  }
+
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
+  }
+
+  header {
+    padding-top: 200px;
+    height: 80vh;
+  }
+
+  .hamburger {
+    display: block;
+    flex: right;
+  }
+
+  .img img {
+    width: 100%;
+  }
+
+  h1 {
+    width: 100%;
+    font-size: 100px;
+  }
+
+  .container {
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .container3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 0 0 0;
+  }
+
+  .text3 {
+    width: 100%;
+    padding: 0;
+  }
+
+  .img img {
+    width: 250px;
+  }
+
+  .img {
+    margin: 0 0 500px 0px;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .paragraph {
+    padding-top: 20px;
+    width: 100%;
+    margin: auto;
+    font-size: 15px;
+    text-align: justify;
+  }
+
+  .skyrius {
+    font-size: 25px;
+    margin: 20px 0;
+  }
+
+  #APIE {
+    height: 100vh;
+  }
+
+  .img1 {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .img1 img {
+    display: block;
+    width: 200%;
+  }
+
+  .card-APIE {
+    border-radius: 20px;
+    /* background-image: linear-gradient(60deg, #482088be 0%, #000000c4 100%); */
+    background-color: #181818;
+    width: 80%;
+    height: 800px;
+    margin: 0 auto;
+  }
+
+  .text1 {
+    width: 80%;
+  }
+  .paragraph1 {
+    text-align: justify;
+    width: 100%;
+    font-size: 15px;
+    padding: 0;
+  }
+
+  .question {
+    font-size: 15px;
+  }
+
+  .container5 {
+    display: none;
+  }
+
+  #KONTAKTAI {
+    padding: 0;
+  }
+
+  form {
+    padding: 0px;
+  }
+
+  input:focus {
+    box-shadow: 0 0px 10px 0 rgb(255, 0, 221), 0 0px 10px rgb(255, 0, 221);
+    transition: 1s;
+  }
+
+  textarea:focus {
+    box-shadow: 0 0px 10px 0 rgb(255, 0, 221), 0 0px 10px 0 rgb(255, 0, 221);
+    transition: 1s;
+  }
+
+  .phone-and-tablet-contact {
+    display: block;
+    width: 100%;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(assets/img/phone-contact.svg);
+  }
+
+  .phone-and-tablet-contact form {
+    padding-top: 70px;
+  }
+
+  .phone-and-tablet-contact button {
+    margin-top: 20px;
+  }
+
+  .phone-and-tablet-contact input,
+  textarea,
+  label,
+  button {
+    color: white;
+    display: flex;
+    margin: auto;
+    width: 100%;
+  }
+
+  .footer-bottom {
+    background-color: #000;
+  }
+  .footer-menu {
+    display: none;
+  }
+
+  .footer-content {
+    padding: 20px;
+  }
+}
+
+.card-APIE .container {
+  width: max-content;
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+  .phone-and-tablet-contact {
+    display: block;
+    width: 100%;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(assets/img/phone-contact.svg);
+  }
+
+  .phone-and-tablet-contact form {
+    margin: auto;
+    width: 80%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
   .Background {
     width: 100%;
   }
@@ -840,6 +1176,10 @@ footer {
     width: 250%;
   }
 
+  .img1 img {
+    width: 100%;
+  }
+
   .title {
     font-size: 50px;
   }
@@ -855,15 +1195,14 @@ footer {
   }
 
   #APIE {
-    height: 100vh;
+    height: 110vh;
   }
 
   .card-APIE {
     border-radius: 20px;
-    /* background-image: linear-gradient(60deg, #482088be 0%, #000000c4 100%); */
     background-color: #181818;
     width: 80%;
-    height: 700px;
+    height: 800px;
     margin: 0 auto;
     padding: 5px;
   }
@@ -905,29 +1244,12 @@ footer {
     color: white;
     display: flex;
     margin: auto;
-    width: 50%;
+    width: 80%;
   }
 }
 
-.card-APIE .container {
-  width: max-content;
-}
-
-@media (max-width: 500px) {
-  .footer-menu ul {
-    display: flex;
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
-}
-
-
-
-@media only screen and (max-width: 320px) {
+@media (min-width: 1101px) and (max-width: 1400px) {
   .Background {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     width: 100%;
   }
   .navbar {
@@ -939,56 +1261,27 @@ footer {
     background-color: black;
     color: #fff;
   }
-  .menu {
-    display: none;
-    position: absolute;
-    background-color: black;
-    right: 0;
-    left: 0;
-    margin: 40px 0;
-    text-align: center;
-    padding: 40px 0;
-  }
-
-  .menu li:hover {
-    display: inline-block;
-    transition: 0.3s ease;
-  }
-
-  .menu li + li {
-    margin-top: 20px;
-  }
-
-  input[type="checkbox"]:checked ~ .menu {
-    display: block;
-  }
 
   header {
-    padding-top: 200px;
+    padding-top: 100px;
+    margin-bottom: 150px;
     height: 80vh;
   }
-
-  .hamburger {
-    display: block;
-    flex: right;
-  }
-
   .img img {
     width: 100%;
   }
 
   h1 {
-    width: 100%;
-    font-size: 100px;
+    font-size: 70px;
   }
 
   .container {
     display: flex;
-    padding: 0;
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
-    margin: 0;
+    justify-content: center;
+    gap: 10px;
+    margin: auto;
+    padding: 0;
   }
 
   .container3 {
@@ -999,44 +1292,34 @@ footer {
   }
 
   .text3 {
+    margin: auto;
     width: 100%;
-    padding: 0;
   }
 
   .img img {
-    width: 200px;
+    width: 200%;
+  }
+
+  .img1 img {
+    width: 100%;
   }
 
   .title {
-    font-size: 40px;
+    font-size: 50px;
+    width: 50%;
   }
 
   .paragraph {
-    padding-top: 20px;
     width: 100%;
-    margin: auto;
     font-size: 15px;
-    text-align: center;
   }
 
   .skyrius {
-    font-size: 25px;
-    margin: 20px 0;
+    font-size: 50px;
   }
 
   #APIE {
     height: 100vh;
-  }
-
-  .img1{
-    width: 40%;
-    display: flex;
-    justify-content: center;
-  }
-
-  .img1 img{
-    display: block;
-    width: 200%;
   }
 
   .card-APIE {
@@ -1044,8 +1327,9 @@ footer {
     /* background-image: linear-gradient(60deg, #482088be 0%, #000000c4 100%); */
     background-color: #181818;
     width: 80%;
-    height: 800px;
+    height: 500px;
     margin: 0 auto;
+    padding: 5px;
   }
 
   .text1 {
@@ -1054,47 +1338,24 @@ footer {
   .paragraph1 {
     text-align: center;
     width: 100%;
-    font-size: 15px;
-    padding: 0;
-  }
-
-  .question{
-    font-size: 15px;
+    font-size: 20px;
   }
 
   .container5 {
     display: none;
   }
 
-  #KONTAKTAI{
-    padding: 0;
-  }
-
-  form{
-    padding: 0px;
-  }
-
-  input:focus {
-    box-shadow: 0 0px 10px 0 rgb(255, 0, 221), 0 0px 10px rgb(255, 0, 221);
-    transition: 1s;
-  }
-  
-  textarea:focus {
-    box-shadow: 0 0px 10px 0 rgb(255, 0, 221), 0 0px 10px 0 rgb(255, 0, 221);
-    transition: 1s;
-  }
-
   .phone-and-tablet-contact {
     display: block;
     width: 100%;
-    height: 800px;
+    height: 1000px;
     background-repeat: no-repeat;
     background-position: center;
     background-image: url(assets/img/phone-contact.svg);
   }
 
   .phone-and-tablet-contact form {
-    padding-top: 70px;
+    padding-top: 200px;
   }
 
   .phone-and-tablet-contact button {
@@ -1108,21 +1369,51 @@ footer {
     color: white;
     display: flex;
     margin: auto;
-    width: 100%;
-  }
-
-  .footer-bottom{
-    background-color: #000;
-  }
-  .footer-menu{
-    width: 100%;
-    margin: 0;
-    padding: 40px 0;
-    background-color: #000;
-    display: none;
+    width: 40%;
   }
 }
 
-.card-APIE .container {
-  width: max-content;
+@media (min-width: 1401px) and (max-width: 2000px) {
+  #KONTAKTAI {
+    background-color: #181818;
+    height: auto;
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .container5 {
+    background-color: #fff;
+    width: 60%;
+    display: flex;
+    height: auto;
+    margin: auto;
+  }
+
+  .informacija {
+    margin: auto;
+    width: 100%;
+  }
+
+  .paveikslelis {
+    background-color: #000;
+    width: 60%;
+  }
+  .paveikslelis img {
+    width: 600px;
+    height: 100%;
+  }
+
+  form {
+    margin: 30px 30px;
+  }
+
+  label {
+    font-size: 25px;
+    font-family: "Inter", sans-serif;
+    color: #1b1b1b;
+    display: flex;
+    width: 400px;
+    font-weight: 500;
+    margin: 20px 0 -10px 0;
+  }
 }
